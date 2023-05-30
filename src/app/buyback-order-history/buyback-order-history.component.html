@@ -1,0 +1,7 @@
+<h2>Categorías HomeIn</h2>
+
+<ul class="orders">
+    <li *ngFor="let category of categories; index as i" (click)="onSelect(category)">
+        <span class="badge">{{ i + 1 }}</span> {{category.name}}
+    </li>
+</ul>
